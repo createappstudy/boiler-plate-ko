@@ -8,11 +8,11 @@ const userSchema = mongoose.Schema({
     email: {
         type : String,
         trim : true,
-        maxLength : 5
+        unique : 1
     },
     password: {
         type : String,
-        maxLength : 5
+        minLength : 5
     },
     lastname: {
         type : String,
